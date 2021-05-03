@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+class Car{
+    constructor(name){
+        this.name=name;
+    }
+    getName()
+    {
+        return this.name;
+    }
+    setName(newName)
+    {
+        this.name=newName;
+    }
+     num=200;
+    static number=200;
+}
+let myObj=new Car("benz");
+console.log(myObj);
+console.log(myObj.getName());
+myObj.setName("ciaz");
+console.log(myObj.getName());
+console.log(Car.num);
+
+class NewCar extends Car
+{
+    constructor(name,brand)
+    {
+super(name);
+this.brand=brand;
+    }
+}
+getBrand()
+{
+    
+}
+</script>
+
+</body>
+</html>

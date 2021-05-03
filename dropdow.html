@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function clrbg(){
+            var x=document.getElementById("selectid");
+            var bgclr=x.options[x.selectedIndex].value;
+            document.body.style.backgroundColor=bgclr;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .wheat{
+              background-color: wheat;
+        }
+        .teal{
+            background-color:teal;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .tomato{
+            background-color: tomato;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+         <h1>(==Drop-Down==)</h1> 
+        <hr>
+    <select id="selectid">
+        <option value="" selected disabled hidden>select-color</option>
+        <option class="wheat">wheat</option>
+        <option class="teal">teal</option>
+        <option class="pink">pink</option>
+        <option class="tomato">tomato</option>
+    </select>
+    <button onclick="clrbg()">chnge-background</button>
+    </center>
+</body>
+</html>

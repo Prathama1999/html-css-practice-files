@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+
+<h1 id="demo">Heading 1 for the page</h1>
+<script>
+    var x=document.getElementById('demo')
+    var prev=x.innerHTML;
+    x.addEventListener("click",mouseClick);
+    x.addEventListener("mouseover",mouseOver);
+    x.addEventListener("mouseout",mouseOver);
+
+    function mouseClick()
+    {
+        x.innerHTML="Mouse is clicked"
+        x.style.color="blue";
+        x.style.backgroundColor="wheat";
+    }
+    function mouseOver()
+    {
+        x.innerHTML="MouseOver"
+        x.style.color="wheat";
+        x.style.backgroundColor="pink";
+    }
+    function mouseOut()
+    {
+        x.innerHTML="prev"
+        x.style.color="red";
+        x.style.backgroundColor="yellow";
+    }
+</script>
+</body>
+</html>

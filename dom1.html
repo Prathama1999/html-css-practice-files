@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>UNORDERED-LIST</h1>
+    <script>
+
+var arr=["java","javascript","HTML"];
+for(var i of arr)
+{
+    var y=document.createElement("li");
+    y.innerHTML=i;
+    document.body.appendChild(y);
+}
+
+var arr1=["a","b","c","d"];
+for(var i of arr1)
+{
+var x=document.createElement("button");
+x.innerText=i;
+document.body.appendChild(x);
+}
+</script>
+</body>
+</html>

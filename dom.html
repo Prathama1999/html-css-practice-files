@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <h1 id="demo">heading with id demo</h1>
+    <div id="mydiv"></div>
+    <section id="mysec"></section>
+<script>
+
+var y=document.createElement('h1');
+ console.log(y);
+
+var y=document.getElementById("myid");
+y.appendChild(y);
+console.log(y);
+
+var m=document.getElementByTagName("p");
+console.log(m);
+ console.log(m[2]);
+
+var n=document.getElementByClassName("dclass");
+console.log(n);
+console.log(typeof(n));
+
+var q=document.getElementByName("sample");
+console.log(q);
+var a= document.querySelectorAll(".dclass");
+console.log(a);
+
+
+
+ 
+// var y=document.createElement('h1');
+// // console.log(x);
+// y.innerHTML="hello";
+//  y.style.color="red";
+// sec= document.getElementById("secid")
+// sec.appendChild(h1);
+
+// var z=document.createElement('p');
+// // console.log(x);
+// z.innerHTML="world";
+
+//  sec.appendChild(p);
+//  sec.appendChild(h1);
+
+//--------------------------
+
+
+// var h=document.createElement(h1);
+// var m=document.createElement("h1");
+// m.innerHTML="HELLO H1";
+// m.style.color="red";
+// var z=document.getElementById("mysec");
+// z.appendChild(m);
+
+
+
+
+
+ 
+//  
+// x=document.createElement('p');
+// console.log(x);
+// x.style.color="red";
+// x.innerHTML="hello div";
+// document.body.innerHTML="hello world"; 
+
+// y= document.getElementById("myid");
+// y.appendChild(x);
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

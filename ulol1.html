@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            color:red;
+            };
+            .class2{
+                background-color: blue;
+            }
+
+    </style>
+</head>
+<body>
+    
+<h1 id="h1id">First header tag</h1>
+<div id="myDiv">
+<p class="pClass">paragraph with pClass -1</p>
+<p class="pClass">paragraph with pClass -2</p>
+<p class="pClass">paragraph with pClass -3</p>
+</div>
+<p id="pID">This paragraph tag is with pID</p>
+<div id="divID">
+    <h1>second header tag</h1>
+    <h3>this is h3 tag</h3>
+    <p>this paragraph is inside div tag with id=divID</p>
+</div>
+<p name="sample">this is p tag with name sample</p>
+<h4 name="sample">this is h4 tag with name sample</h4>
+<button onclick="getID()">getID</button>
+<p></p>
+<button onclick="buttonClass()">buttonClass</button>
+<p></p>
+<button onclick="tagButton()">tagButton</button>
+<p></p>
+<button onclick="buttonName()">buttonName</button>
+<p></p>
+<script>
+    function getID()
+    {
+        var x=document.getElementById("h1id");
+        x.style.color="red";
+        x.style.backgroundColor="yellow";
+    }
+    function buttonClass(){
+        var x=document.getElementsByClassName('pClass');
+        console.log(x);
+        for(var i=0;i<x.length;i++)
+        {
+            x[i].style.color="green";
+            x[i].style.backgroundColor="grey"; 
+        }
+    }    
+    function tagButton() {
+        var x=document.getElementsByTagName("h3");
+        console.log(x);
+        for(var i=0;i<x.length;i++)
+        {
+            x[i].style.color="purple";
+            x[i].style.backgroundColor="pink"; 
+        }
+    }
+
+
+    function buttonName() {
+        var x=document.getElementsByName('sample');
+        console.log(x);
+        for(var i=0;i<x.length;i++)
+        {
+            x[i].style.color="black";
+            x[i].style.backgroundColor="wheat"; 
+        }
+    }
+
+
+     x=document.getElementById('divID');
+    console.log(x);
+    console.log(x.childNodes);
+    console.log(x.childNodes[0]);
+    console.log(x.childNodes[1]);
+    console.log(x.children);
+    console.log(x.firstChild);
+    console.log(x.firstElementChild);
+    console.log(x.lastChild);
+    console.log(x.LastElementChild);
+    console.log(x.firstChild.nextSibling);
+    console.log(x.children[1]);
+
+    <ul id="myUL">
+     <li>JAVA</li>
+     <li>c++</li>
+     <li>j2ee</li>
+     <li>python</li>
+     <li>html</li>
+     </ul>
+
+     <button onclick="add()">add style</button>
+     <button onclick="remove">remove style</button>
+
+
+
+var x=document.getElementById("myUL");
+
+var l1=document.createElement("li");
+l1.innerHTML='css';
+x.appendChild(l1);
+
+    var l2=document.createElement('li');
+    l2.innerHTML='bootstrap';
+    x.insertBefore(l2, x.firstChild[2]);
+
+    var l3=document.createElement('li');
+    l3.innerHTML='sql';
+    x.insertBefore(l3, x.childNodes[4]);
+
+
+    x.removeChild(x.children[2]);
+
+    var y=document.getElementById('demo');
+    function add()
+    {
+     y.classList(class1);
+     y.classList(class2);   
+    }
+    function remove()
+    y.classList.remove(class1);
+        </script>
+
+
+</script>
+</body>
+</html>

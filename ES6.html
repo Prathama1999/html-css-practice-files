@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p> -->
+    <script>
+    // var a=10;
+    // a=12;
+    // b=15;
+    // console.log(a);
+    // if(a===12)
+    // {
+    //     b=20;
+    //     console.log(b);
+    //     b+=1;
+    //     console.log(b);
+    // }
+    // console.log(b);
+    // for(var i=0;i<5;i++)
+    // {
+    //     console.log(i);
+    // }
+    // console.log(i);
+// let a =10;
+// console.log(a);
+// a=12;
+// console.log(a);
+// a=15;
+// console.log(a);
+
+// for(i=0;i<5;i++)
+// {
+//     console.log(i);
+// }
+// console.log(i);
+
+// const a=3;
+// for(let i=0;i<5;i++)
+// console.log(i);
+
+// let s="i am learning 'javascript'";
+// console.log(s);
+
+// let s1='i am learning "javascript"';
+// console.log(s1);
+
+// let myString=`am "learning" java script`;
+// console.log(myString);
+// let lang="javascript";
+// let prog=' ELF';
+// console.log("am learning" +lang+"as a part of" +prog);
+// console.log(`am learning ${lang}as a part of ${prog}`);
+
+
+// let name = ["prathama","madhu","kusuma","kavya","pavitra"];
+// document.getElementById("demo").innerHTML = name;
+// console.log(name[0]);
+
+// let rollNum = [1,2,3,4,5];
+// document.getElementById("demo1").innerHTML = rollNum;
+// console.log(rollNum[0]);
+
+
+// let lang = ["c","c++","java","bootstrap","css"];
+// document.getElementById("demo2").innerHTML = lang;
+// console.log(lang[0]);
+
+// var arr=["a","b","c"];
+// var arr1=[20,30,40];
+// for( var i=0;i<arr.length;i++)
+// {
+//     console.log(`roll num ${arr1[i]} marks of prasad is ${arr[i]} grade in pu`);
+// }
+
+//object and array desrtucturing
+
+//1.array destructuring
+
+// let arr=[2,3,4,5,6,];
+// let [a,b,c,d,e]=arr;   
+// console.log(a);
+// console.log(b);
+
+//2.object destructuring
+
+// let personData={
+//     name:"sudha",
+//     roll:24,
+//     place:"bangalore",
+//     country:"india"
+// }
+// let{name,roll,country}=personData;
+// console.log(roll);
+// console.log(country);
+
+// function sum(a,b)
+// {
+//     return a+b;
+// }
+// console.log(sum(3,3));
+// arr=[2,3];
+// console.log(sum(arr));  //doesnt work so use spread operator
+// console.log(sum(...arr));
+
+// function myFunction(...arr)
+// {
+//     let sum=0;
+//     for(let i of arr)
+//     {
+//         sum+=i;
+//     }
+//     return sum;
+// }
+// console.log(myFunction(2,3,4,5,6));
+
+// function myFunction2(a,b,...arr)
+// {
+//     let c=a*b;
+//     let sum=0;
+//     for(let i of arr)
+//     {
+// sum+=i;
+//     }
+//     return c+sum;
+// }
+// console.log(myFunction2(2,3,4,5,6));
+
+function myFunction(...arr)
+{
+        let sum=0;
+    for(i of arr)
+    {
+    sum+=i;
+    }
+
+return sum;
+}
+console.log(myFunction(1,2,3,4));
+
+function myFunction2(a,b,...arr)
+{
+    j=a+b;
+    for(i of arr)
+    {
+        sum+=j;
+    }                                                           
+console.log(myFunction2(1,2,3,4));
+}
+
+
+</script>
+</body>
+</html>

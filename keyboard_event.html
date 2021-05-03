@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="demo" onKeyDown="fn1()">
+<script>
+    var myNew=document.createElement('p');
+    var h=document.createElement('h3');
+    h.style.color="red";
+
+    function fn1()
+    {
+        var x=document.getElementById('demo').value;
+      x=x.toUpperCase();
+      console.log(x);
+      myNew.innerText=x;
+        document.body.appendChild(myNew);
+        
+}
+function fn2()
+{
+    var y=document.getElementById('demo').value;
+    h.innerText=y;
+    document.body.appendChild(h);
+}
+
+</script>
+</body>
+</html>

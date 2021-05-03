@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
+    #navBar{
+        background-color: blueviolet;
+        height: 50px;
+        padding: 6px 3px;
+    }
+
+    #navbar ul{
+        overflow: auto;
+    }
+
+    #navBar li{
+        background-color: bisque;
+        color: black;
+        float: left;
+        list-style: none;
+    }
+#navBar a{
+    text-decoration: none;
+    background-color: rgb(95, 177, 138);
+    padding: 5px 5px;
+    margin: 2px 2px;
+}
+
+#searchBox 
+{
+    
+    float:right;
+}
+
+#navBar a:hover{
+    color:red;
+    background-color: yellowgreen;
+}
+    </style>
+</head>
+<body>
+    <nav id="navBar">
+        <ul>
+           <!-- <li>home</li>
+            <li>about us </li>
+            <li>contact us</li>
+            <li>gallery</li>
+--> 
+<li><a href="#">HOME</a></li>
+<li><a href="#">about us</a></li>
+<li><a href="#">gallery</a></li>
+<li><a href="#">contact us</a></li>
+
+            <div id="searchBox">
+                <input type="searchBox" placeholder="search...">
+            </div>
+        </ul>
+    </nav>
+    
+</body>
+</html>

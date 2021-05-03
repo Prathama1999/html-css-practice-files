@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+</head>
+<body>
+    <center>
+    <h1><u>Registration-Form</u></h1><br><br>
+        <form onsubmit="return validDate()">
+        <label> Firstname: </label>         
+        <input type="text" name="fname" id="fname" placeholder="enter first name"> <br>  
+        <small id="fNameErr"></small>
+
+        <label> Lastname: </label>         
+        <input type="text" name="lname" id="lname" placeholder="enter last name"> <br>  
+        <small id="lNameErr"></small>
+
+        <label> e-mail: </label>  
+        <input type="email" id="email" name="email" placeholder="enter mail_id"> <br>
+        <small id="mailErr"></small>
+
+        <label> password: </label> 
+        <input type="password" name="pwd" id="pwd" placeholder="enter password"><br>
+        <small id="pwdErr"></small>
+
+        <label>Confirm-password:</label> 
+        <input type="Password" id="cpwd" name="cpwd" placeholder="confirm passwords"> <br>  
+        <small id="cpwdErr"></small>
+
+        <label>DOB:</label>
+        <input class="birthdate" type="date" id="bdate" name="bdate" placeholder="YYYY-MM-DD" ><br>
+        <small id="dobErr"></small>
+
+        <label>phone number:</label>
+        <input type="tel"  name="phn" id="phn" placeholder="ph_no"> <br>
+       <small id="phErr"></small>
+
+        <label>Age:</label>
+        <input type="number" onkeydown="onKeyPressAge(event)" id="ag" name="ag" placeholder="enter age"> <br><br>
+        <small id="ageErr"></small>   
+
+        <label>Address:</label>
+        <textarea cols="50" rows="5" value="address" name="adr" id="adr"> </textarea>  <br>  
+        <small id="addErr"></small>
+
+        <button type="submit">submit</button>
+
+        </form>  
+
+        <script src="reg.js"></script>
+        </center>   
+    </body>  
+</html>

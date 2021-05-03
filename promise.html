@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ 
+let myPromise=new Promise((resolve,reject)=>
+{
+    let condition=true;
+    if(condition===true)
+    {
+        resolve("this is resolved");
+    }
+    else{
+        reject("there will be error");
+    }
+})
+myPromise.then((resp)=>   //then is call back function
+{
+       console.log("i am inside then:" +resp);          //whatever returned by resolve will be in resp
+
+})
+.catch((err)=>
+{
+    console.log("this is error:" +err);
+})
+
+</script>
+</body>
+</html>

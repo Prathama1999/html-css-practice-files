@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function myFunction()
+        {
+            console.log("1st line of my function before fetch");
+            let data=await fetcgh("https://api.github.com/users");
+            console.log("this line is after fetch and before json");
+            console.log(data);
+            let myData=await data.json();
+            console.log("end of the function");
+            return myData;
+        }
+        console.log("start of the code before calling the function");
+        d=myFunction();
+        console.log("after calling a function");
+        d.then((resp)=>
+        {
+            console.log(resp);
+            console.log([0]);
+        }).catch((err)=>
+    {
+        console.log(err);
+    })
+    console.log("end of the code");
+    </script>
+
+
+
+
+</body>
+</html>
